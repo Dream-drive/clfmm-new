@@ -1,0 +1,1134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Living Faith Miracle Ministry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+       /* General Styles */
+      /* Custom styles for the navbar */
+      .navbar {
+            background-color: #111416; /* Set the header background color to black */
+            padding: 1rem 1rem; /* Adjust padding to reduce space around the navbar */
+        }
+
+        .navbar-brand {
+            margin-left: 0; /* Reset margin */
+            padding-left: 0; /* Remove padding */
+            
+        }
+
+        .container-fluid {
+            padding-left: 0; /* Remove padding for the left edge */
+        }
+
+        /* Custom styles for the navbar toggler */
+        .navbar-toggler {
+            width: 35px;  /* Adjust the width as needed */
+            height: 35px; /* Adjust the height as needed */
+            padding: 2px; /* Adjust padding to make the icon smaller */
+        }
+
+        /* Custom styles for the offcanvas menu */
+        .offcanvas {
+            background-color: #111416; /* Set the offcanvas background color to dark grey */
+            color: white; /* Set text color to white */
+        }
+
+        .offcanvas .nav-link {
+            color: white; /* Set text color of nav links in offcanvas */
+        }
+
+        .offcanvas .nav-link:hover {
+            color: #f8f9fa; /* Set hover color for nav links in offcanvas */
+            background-color: #333; /* Optional: Set a background color on hover for better visibility */
+        }
+
+        /* Custom styles for the navigation links on larger screens */
+        .nav-link {
+            color: white; /* Set nav links color to white */
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .nav-link:hover {
+            color: black; /* Set hover color for nav links to black */
+            background-color: white; /* Set background color on hover to white */
+            border-radius: 5px; /* Optional: Add some rounding to the hover effect */
+        }
+
+        /* Custom styles for the Account button */
+        .btn-primary {
+            background-color: whitesmoke; /* Set button background color */
+            border-color: white;
+            color: black; /* Set button text color */
+         
+            font-size: 13px;
+            padding: 6px;
+        }
+        .btn-primary:hover {
+            background-color: black; /* Set button background color on hover */
+            border-color: black;
+            color: white; /* Set button text color on hover */
+        }
+        .navbar-toggler-icon {
+            background-image: none; /* Remove default image */
+        }
+
+        .navbar-toggler-icon::before {
+            content: "\2630"; /* Unicode for a hamburger menu icon */
+            color: white; /* Change the toggler icon color to white */
+            font-size: 1.5rem; /* Adjust size as needed */
+        }
+
+        /* Custom styles for the close button of the offcanvas */
+        .offcanvas-header .btn-close {
+            filter: invert(1); /* Invert the default close button color to white */
+        }
+
+        .offcanvas-header .btn-close:hover {
+            filter: invert(0.5); /* Change the close button color on hover */
+        }
+
+/*dee*/
+
+
+
+footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 3px;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+
+
+
+        .btn-primary {
+            background-color: whitesmoke;
+            border-color: black;
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: white;
+        }
+
+        .hero {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+
+        .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .hero-overlay h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+           
+        }
+
+       
+
+
+
+        @media screen and (max-width: 468px) {
+            .hero-overlay h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                margin-top: 90px;
+            
+        }
+        .col-md-6{
+        font-size: 15px;
+    }
+    
+   .container h2{
+       font-size: 28px;
+       text-align: center;
+       margin-bottom: 2rem;
+       font-weight: bold;
+    }
+    }
+
+        .hero-overlay p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* hero style end*/
+
+
+        
+    
+    .devotional-section {
+        background: linear-gradient(to right, #f4f4f9, #e0e7ff);
+        padding: 4rem 0;
+    }
+    .devotional-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .devotional-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    .devotional-header {
+        margin-bottom: 2rem;
+    }
+    .devotional-header h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .devotional-content {
+        text-align: center;
+    }
+    .devotional-content p {
+        font-size: 1.1rem;
+    }
+    .devotional-image img {
+        border-radius: 15px;
+        max-width: 100%;
+    }
+    .btn-devotional {
+        background-color: whitesmoke;
+        color: black;
+        border: none;
+    }
+    .btn-devotional:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+
+
+
+
+    
+.event-details{
+       font-size: 1.5rem;
+       margin-top: 5rem;
+   }
+   .image-gallery{
+       margin-bottom: 4rem;
+   }
+   .event .container{
+    margin-bottom: -42px;
+   }
+    
+  
+
+
+        .alert-link{
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+
+        .alert-primary{
+            margin: 0 auto;
+            margin-top: -70px; 
+            background-color: whitesmoke;   
+ }
+  .goe{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.goe-details{
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+
+
+
+/* Container for the iframe */
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Responsive iframe */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/* Center the contact details section */
+.contact-details-section {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Optional: Add padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+/* Ensure that lists and other elements look good */
+.contact-details-section ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details-section address {
+    margin: 0;
+    margin-bottom: 1px;
+}
+
+.contact-details-section a {
+    color: #007bff; /* Adjust color to fit your design */
+    text-decoration: none;
+}
+
+.contact-details-section a:hover {
+    text-decoration: underline;
+}
+.col-md-6 img{
+    margin-bottom: 2rem;
+}
+.devotional-section{
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+/* News and Announcements Section */
+.news-announcements {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.news-announcements .section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-headline {
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.news-excerpt {
+  font-size: 1em;
+  color: #666;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.more-news {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btnn-primary {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btnn-primary:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.container h2{
+    font-weight: bold;
+}
+
+
+
+
+
+/* Activities Overview Section */
+.activities {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.activities .section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.activities-overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.day-activities {
+  margin-bottom: 40px;
+}
+
+.theme-image img,
+.preacher img,
+.sermon img,
+.song-ministration img,
+.other-ministrations img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.day-activities h3,
+.day-activities h4 {
+  color: #007bff;
+}
+
+.day-activities p {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .activities .section-title {
+    font-size: 1.5em;
+  }
+
+  .day-activities h3,
+  .day-activities h4 {
+    font-size: 1.2em;
+  }
+ 
+}
+
+
+
+
+
+
+
+/* styles.css */
+
+
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto; /* This centers the container horizontally */
+}
+
+
+.image-display {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-image {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.gallery-image.active {
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="clfmm.png" alt="Logo" width="30" height="30"> 
+            </a>
+            <!-- Toggler for smaller screens -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar items for larger screens -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-3" aria-current="page" href="index.html" style="color: rgb(177, 166, 166);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="ministries.html">Ministries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="sermons.html">Sermon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="events.html">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="donations.html">Giving/Donations</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-auto">
+                    <a href="signup.html" class="btn btn-primary">Account</a>
+                </div>
+            </div>
+            <!-- Offcanvas for smaller screens -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-3" aria-current="page" href="index.html" style="color: rgb(177, 166, 166);">Home</a>                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Ministries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sermons.html">Sermon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donations.html">Giving/Donations</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-end mt-3">
+                        <a href="signup.html" class="btn btn-primary">Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section with Background Video -->
+        <section class="hero">
+            <video autoplay muted loop id="heroVideo">
+                <source src="goe.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="hero-overlay">
+                <h2>Welcome to Christ Living Faith Miracle Ministry</h2>
+                <p>Join us in faith, worship, and community</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </section>
+          <!-- Welcome Section -->
+    <section class="welcome-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="alert alert-primary" role="alert">
+                        <p>If you are a member of Christ Living Faith, please <a href="signup.html" class="alert-link">sign up here</a> to stay connected and access exclusive member content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Introduction to the Church -->
+        <section class="introduction py-5">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="papa1.png" alt="Bishop Abraham Bruce" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <p>CHRIST LIVING FAITH MIRACLE MINISTRY CHURCH: Founded by Bishop Abraham Bruce, our church has been a beacon of faith in Sekondi-Takoradi. We are committed to serving our local community and spreading the message of hope and salvation through our various ministries and outreach programs. <br>
+
+ Our mission is to bring spiritual growth and support to everyone who walks through our doors. 
+
+At Christ Living Faith Miracle Ministry, we believe in fostering a loving and inclusive environment where all individuals can experience God's grace and transform their lives. Our church offers a range of services and activities designed to cater to different needs and ages, including dynamic worship services, engaging Bible studies, and vibrant youth programs.
+
+Our dedicated teams work tirelessly to address the needs of our community, providing support through charity events, counseling services, and educational programs. We are passionate about making a positive impact both locally and beyond, driven by the belief that faith can lead to profound change.
+
+We invite you to join us and be a part of this journey of faith, hope, and transformation. Whether you are seeking spiritual growth, a supportive community, or a place to serve, you will find a welcoming home here at Christ Living Faith Miracle Ministry.
+
+                        
+                        </p>
+                        <p style="font-size: 20px; font-family: 'Arial Black', sans-serif; color: #700a85; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
+                            <em style="font-weight: bold;">CHRIST LIVING FAITH!!!: "OUR GOD IS ABLE"</em>
+                          </p>
+                          
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+<!-- Image Slider Section -->
+<section class="image-slider py-5">
+    <div class="container">
+        <h2>Latest Programs</h2>
+        <!-- Add data-bs-ride="carousel" for auto sliding -->
+        <div id="sliderExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- 3000 milliseconds (3 seconds) -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="program3.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="program4.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="program5.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="program6.jpg" class="d-block w-100" alt="Slide 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="program7.jpg" class="d-block w-100" alt="Slide 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="program8.jpg" class="d-block w-100" alt="Slide 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="program9.jpg" class="d-block w-100" alt="Slide 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="program10.jpg" class="d-block w-100" alt="Slide 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="program11.jpg" class="d-block w-100" alt="Slide 9">
+                </div>
+                <div class="carousel-item">
+                    <img src="program12.jpg" class="d-block w-100" alt="Slide 10">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sliderExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sliderExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Upcoming Events -->
+        <section class="events py-5">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                
+<!-- News and Announcements Section -->
+<section id="news-announcements" class="news-announcements">
+    <div class="container">
+      <!-- Section Title -->
+      <h2 class="section-title">News and Announcements</h2>
+  
+      <!-- News Item: The Gathering of Eagles -->
+      <div class="news-item">
+        <h3 class="news-headline">The Gathering of Eagles: Annual Convention</h3>
+        <!-- Add this snippet inside each news item div -->
+<p class="news-date">Posted on: August 13, 2024</p>
+
+        <p class="news-excerpt">
+          We are excited to announce our annual convention, "The Gathering of Eagles." Today, Sunday, August 25, 2024, marks the grand opening ceremony of the program during our Sunday morning service at 8:00 AM. The convention officially begins on Monday, August 26th, and will run each night from 6:00 PM to 10:00 PM for five days, concluding with a grand finale during the Sunday morning service. Join us for a week of powerful services and fellowship! <a href="full-article-gathering-of-eagles.html" class="read-more">Read more...</a>
+        </p>
+      </div>
+  
+      <!-- More News Button -->
+       
+      
+
+      <div class="more-news">
+        <!-- Call Button -->
+        <p>If you have any questions or need more information, feel free to call us directly.</p>
+
+        <a href="tel:+233 542367766" class="btn btn-call">Call Now</a>
+      </div>
+    </div>
+  </section>
+  
+
+                <h3 class="heading-3">Gathering of Eagles</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="goe2024.jpg" class="img-fluid" alt="Gathering-of-Eagles">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-gallery">
+                            <div class="row">
+                                <div class="col-4 mb-2">
+                                    <img src="service (7).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="service (8).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="service (9).jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                
+
+        <div class="col-4 mb-2" id="image-4">
+            <img 
+                src="service (3).jpg" 
+                class="img-fluid" 
+                alt="Event Image" 
+                style="height: 124px;" 
+                id="responsive-image"
+            >
+        </div>
+                                <div class="col-4 mb-2">
+                                    <img src="program1.jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                                <div class="col-4 mb-2">
+                                    <img src="program2.jpg" class="img-fluid" alt="Event Image">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="event-details mt-1 text-center">
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="goe-details">
+            <h4 class="goe">Annual Church Convention</h4>
+    <p class="goe">Date: August 26, 2024</p>
+    <p class="goe">Join us for a day of worship, teaching, and fellowship.</p>
+        </div>
+        
+
+        
+       
+
+
+        <!-- Activities of the Convention Section -->
+<section id="activities-overview" class="activities">
+    <div class="container">
+      <!-- Section Title -->
+      <h2 class="section-title">Highlights from the Convention</h2>
+  
+      <!-- Combined Activities Overview -->
+      <div class="activities-overview">
+        <!-- Day 1 -->
+        <div class="day-activities">
+          <h3>Day 1: Grand Opening Ceremony</h3>
+          <div class="theme-image">
+            <img src="opening-goe.png" alt="Day 1 Theme Image" />
+          </div>
+          <div class="preacher">
+            <h4>Preacher</h4>
+            <img src="bishop.jpg" alt="Day 1 Preacher Image" />
+            <p>Bishop Abraham Kofi Bruce delivered an inspiring message on the theme of this year's convention.</p>
+          </div>
+          <div class="sermon">
+            <h4>Sermon</h4>
+            <img src="ewusi-baidoo2.JPG" alt="Day 1 Preacher Image" />
+            <p>Rev. Emmanuel Ewusi Baidoo focused on embracing the seasons and timings of God.</p>
+          </div>
+          <div class="song-ministration">
+            <h4>Song Ministration</h4>
+            <img src="choir2.jpg" alt="Day 1 Song Ministration Image" />
+            <p>The Glorious Choir led a beautiful session of worship and praise.</p>
+          </div>
+          <div class="other-ministrations">
+            <h4>Other Ministrations</h4>
+            <img src="minister (1).jpg" alt="Day 1 Other Ministrations Image" />
+            <p>Prayer sessions and prophetic words contributed to a spiritually enriching experience.</p>
+          </div>
+        </div>
+
+
+        <h3 class="heading-3">Prayer sessions and prophetic words contributed to a spiritually enriching experience.</h3>
+        <div class="row">
+            <!-- First Large Image -->
+            <div class="col-md-6">
+                <img src="service (7).jpg" class="img-fluid" alt="Gathering-of-Eagles">
+            </div>
+            
+            <!-- Image Gallery for Remaining Images -->
+            <div class="col-md-6">
+                <div class="row">
+                    <!-- Repeating structure for all 9 images, keeping them equal size -->
+                    <div class="col-4 mb-2">
+                        <img src="congregation.JPG" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="ministration.jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="congregations (1).jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="congregation-back.jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="prayer1.jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="ministration1.jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="congregations (4).jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="kenneth.JPG" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                    <div class="col-4 mb-2">
+                        <img src="minister (2).jpg" class="img-fluid" alt="Event Image" style="height: 95px; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="event-details mt-1 text-center">
+            <!-- Additional content for event details can go here -->
+        </div>
+
+        
+
+
+
+
+
+
+    <div class="gallery-container">
+        <!-- Previous Button -->
+        <button class="nav-button prev-button" onclick="prevImage()">&#10094;</button>
+
+        <!-- Image Container -->
+        <div class="image-display">
+            <img src="congregations (1).jpg" alt="360 Image 1" class="gallery-image active">
+            <img src="congregations (3).jpg" alt="360 Image 2" class="gallery-image">
+            <img src="congregations (4).jpg" alt="360 Image 3" class="gallery-image">
+            <img src="congregations (5).JPG" alt="360 Image 4" class="gallery-image">
+            <img src="congregations (6).JPG" alt="360 Image 5" class="gallery-image">
+            <img src="congregations (8).JPG" alt="360 Image 6" class="gallery-image">
+            <img src="congregations (9).JPG" alt="360 Image 7" class="gallery-image">
+            <img src="congregations (11).JPG" alt="360 Image 8" class="gallery-image">
+            <img src="congregations (12).jpg" alt="360 Image 9" class="gallery-image">
+        </div>
+
+        <!-- Next Button -->
+        <button class="nav-button next-button" onclick="nextImage()">&#10095;</button>
+    </div>
+
+ 
+
+
+
+  
+          
+
+
+        <!-- Daily Devotional -->
+      <!-- Devotional Section -->
+<section class="devotional-section">
+    <div class="container">
+        <div class="row devotional-header text-center">
+            <div class="col">
+                <h2>Daily Devotionals</h2>
+                <p>Start your day with inspiration and spiritual growth.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card devotional-card">
+                    <div class="devotional-image">
+                        <img src="morning-reflection.jpg" alt="Devotional Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Morning Reflections</h5>
+                        <p class="card-text">A peaceful and thought-provoking way to start your day with the word of God.</p>
+                        <a href="devotional-detail.html" class="btn btn-devotional">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card devotional-card">
+                    <div class="devotional-image">
+                        <img src="daily-scripture.jpg" alt="Devotional Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Daily Scripture</h5>
+                        <p class="card-text">Find a daily scripture that speaks to your heart and guides your steps.</p>
+                        <a href="devotional-detail.html" class="btn btn-devotional">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card devotional-card">
+                    <div class="devotional-image">
+                        <img src="quote.jpg" alt="Devotional Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Inspirational Quotes</h5>
+                        <p class="card-text">Daily quotes to uplift and encourage you in your spiritual journey.</p>
+                        <a href="devotional-detail.html" class="btn btn-devotional">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Page -->
+<div class="iframe-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScagX90thjCEorv2-OY7-ur9-_yMbHmDuCUisU3Qv0omoRWXw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+                <!-- Google Maps Embed Section -->
+                <section class="map-section mb-4">
+                    <h3>Find Us Here</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.234484747574!2d-1.7585706845903395!3d5.256670296124814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfbac8b99a4e76241%3A0x4d9c9e146c8d4c82!2sSekondi-Takoradi%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1690467477381!5m2!1sen!2sgh" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+
+            
+
+                <!-- Office Hours and Contact Details Section -->
+                <section class="contact-details-section">
+                    <h3>Office Hours & Contact Info</h3>
+                    <p><strong>Office Hours:</strong></p>
+                    <ul>
+                        <li>Monday - Friday: 9:00 AM - 3:00 PM</li>
+                        <li>Saturday: 10:00 AM - 2:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                    <p><strong>Address:</strong></p>
+                    <address>
+                        Christ Living Faith Miracle Ministry<br>
+                        Biscoe Road<br>
+                         Mempeasem-Down,Sekondi-Takoradi
+                    </address>
+                    <p><strong>Phone:</strong> <a href="tel:+233542367766">+233 54 236 7766</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:clfmm102@gmail.com">clfmm102@gmail.com</a></p>
+                </section>
+            </div>
+        </section>
+    </main>
+        
+      <!-- Footer Section -->
+      <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Briscoe Road, Mempeasem-Down Sekondi-Takoradi</p>
+                    <p><strong>Phone:</strong> <a href="tel:+233542367766">+233 54 236 7766</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:clfmm102@gmail.com">clfmm102@gmail.com</a></p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/clfmm?mibextid=ZbWKwL"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+   
+   
+
+
+
+    <script>
+        // script.js
+let currentIndex = 0;
+const images = document.querySelectorAll('.gallery-image');
+
+// Function to show the next image
+function nextImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+}
+
+// Function to show the previous image
+function prevImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    images[currentIndex].classList.add('active');
+}
+
+// Initialize the first image
+images[currentIndex].classList.add('active');
+
+    </script>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+
+   
+    <!-- Adjust image height on window resize -->
+    <script>
+        // Function to adjust image height based on screen width
+        function adjustImageHeight() {
+            var image = document.getElementById('responsive-image');
+            if (window.innerWidth <= 768) {
+                // Adjust height for smaller screens
+                image.style.height = '80px';
+            } else {
+                // Reset to default height for larger screens
+                image.style.height = '124px';
+            }
+        }
+    
+        // Call the function on window resize and load
+        window.addEventListener('resize', adjustImageHeight);
+        window.addEventListener('load', adjustImageHeight);
+    </script>
+    
+
+</body>
+</html>

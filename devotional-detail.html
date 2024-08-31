@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devotional Detail | Christ Living Faith Miracle Ministry</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+   
+   /* Header Styles */
+  
+       /* General Styles */
+      /* Custom styles for the navbar */
+      .navbar {
+            background-color: #111416; /* Set the header background color to black */
+            padding: 1rem 1rem; /* Adjust padding to reduce space around the navbar */
+        }
+
+        .navbar-brand {
+            margin-left: 0; /* Reset margin */
+            padding-left: 0; /* Remove padding */
+            
+        }
+
+        .container-fluid {
+            padding-left: 0; /* Remove padding for the left edge */
+        }
+
+        /* Custom styles for the navbar toggler */
+        .navbar-toggler {
+            width: 35px;  /* Adjust the width as needed */
+            height: 35px; /* Adjust the height as needed */
+            padding: 2px; /* Adjust padding to make the icon smaller */
+        }
+
+        /* Custom styles for the offcanvas menu */
+        .offcanvas {
+            background-color: #111416; /* Set the offcanvas background color to dark grey */
+            color: white; /* Set text color to white */
+        }
+
+        .offcanvas .nav-link {
+            color: white; /* Set text color of nav links in offcanvas */
+        }
+
+        .offcanvas .nav-link:hover {
+            color: #f8f9fa; /* Set hover color for nav links in offcanvas */
+            background-color: #333; /* Optional: Set a background color on hover for better visibility */
+        }
+
+        /* Custom styles for the navigation links on larger screens */
+        .nav-link {
+            color: white; /* Set nav links color to white */
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .nav-link:hover {
+            color: black; /* Set hover color for nav links to black */
+            background-color: white; /* Set background color on hover to white */
+            border-radius: 5px; /* Optional: Add some rounding to the hover effect */
+        }
+
+        /* Custom styles for the Account button */
+        .btn-primary {
+            background-color: whitesmoke; /* Set button background color */
+            border-color: white;
+            color: black; /* Set button text color */
+         
+            font-size: 13px;
+            padding: 6px;
+        }
+
+        .btn-primary:hover {
+            background-color: black; /* Set button background color on hover */
+            border-color: black;
+            color: white; /* Set button text color on hover */
+        }
+        .navbar-toggler-icon {
+            background-image: none; /* Remove default image */
+        }
+
+        .navbar-toggler-icon::before {
+            content: "\2630"; /* Unicode for a hamburger menu icon */
+            color: white; /* Change the toggler icon color to white */
+            font-size: 1.5rem; /* Adjust size as needed */
+        }
+
+        /* Custom styles for the close button of the offcanvas */
+        .offcanvas-header .btn-close {
+            filter: invert(1); /* Invert the default close button color to white */
+        }
+
+        .offcanvas-header .btn-close:hover {
+            filter: invert(0.5); /* Change the close button color on hover */
+        }
+
+/*dee*/
+
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: whitesmoke;
+            border-color: black;
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: white;
+        }
+
+
+        /* Devotional Detail Styles */
+        .devotional-detail {
+            background-color: #f8f9fa; /* Light background for the section */
+            padding: 60px 20px; /* Padding for spacing */
+        }
+
+        .devotional-detail h2 {
+            font-size: 36px; /* Font size for heading */
+            margin-bottom: 30px; /* Spacing below heading */
+            color: #333; /* Text color */
+            font-weight: 700; /* Bold font */
+            text-align: center; /* Center align heading */
+        }
+
+        .devotional-card {
+            background-color: #ffffff; /* White background for card */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            padding: 30px; /* Padding inside card */
+        }
+
+        .devotional-card img {
+            width: 100%; /* Make image responsive */
+            border-radius: 8px; /* Rounded corners for image */
+        }
+
+        .devotional-card h4 {
+            font-size: 24px; /* Font size for subheading */
+            margin-bottom: 20px; /* Spacing below subheading */
+            color: #666; /* Text color */
+        }
+
+        .devotional-card p {
+            font-size: 18px; /* Font size for paragraphs */
+            color: #444; /* Text color */
+            line-height: 1.6; /* Line height */
+            margin-bottom: 20px; /* Margin below paragraphs */
+        }
+
+        .devotional-card a {
+           
+            padding: 10px 20px; /* Button padding */
+            border-radius: 5px; /* Rounded corners for button */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display inline-block */
+        }
+
+        
+        .container h2{
+            margin-top: 7rem;
+        }
+        
+
+        .devotional-image-container {
+    width: 100%; /* Full width for container */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.devotional-image-container img {
+    width: 100%; /* Make image take full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    border-radius: 8px; /* Rounded corners for image */
+}
+      
+
+ /* Optional custom styling daily scripture section */
+
+        .card {
+            border: none;
+            border-radius: 0.5rem;
+        }
+        .card-body {
+            background-color: #f8f9fa;
+            padding: 2rem;
+        }
+       
+        .btn-secondary {
+            background-color: whitesmoke;
+            border-color: black;
+            color: black;
+            padding: 4px;
+            font-size: 14px;
+        }
+        .btn-secondary:hover {
+            background-color: black;
+            border-color: white;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="clfmm.png" alt="Logo" width="30" height="30"> 
+            </a>
+            <!-- Toggler for smaller screens -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar items for larger screens -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="ministries.html">Ministries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="sermons.html">Sermon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="events.html">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="donations.html">Giving/Donations</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center ms-auto">
+                    <a href="signup.html" class="btn btn-primary">Account</a>
+                </div>
+            </div>
+            <!-- Offcanvas for smaller screens -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link  mx-3" aria-current="page" href="index.html">Home</a>                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ministries.html">Ministries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sermons.html">Sermon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donations.html">Giving/Donations</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-end mt-3">
+                        <a href="signup.html" class="btn btn-primary">Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Devotional Detail Section -->
+    <section class="devotional-detail">
+        <div class="container">
+            <h2>Morning Reflections</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="devotional-card">
+                        <img src="morning-reflection.jpg" alt="Devotional Image">
+                        <h4>Date: August 20, 2024</h4>
+                        <p>A peaceful and thought-provoking way to start your day with the word of God. This section includes reflections, meditations, and scriptures to inspire your morning routine.</p>
+                        <p>Today’s reflection focuses on the theme of renewal. Embrace the new opportunities that each day brings, and let the spirit of hope and faith guide you. Reflect on how you can renew your spirit and deepen your relationship with God.</p>
+                        <p><strong>Scripture Reading:</strong> Psalm 51:10 - “Create in me a clean heart, O God; and renew a right spirit within me.” This verse reminds us to seek God’s help in refreshing our hearts and minds each day.</p>
+                        <p>Consider journaling your thoughts and prayers as you meditate on this scripture. Ask yourself how you can bring about positive changes in your life and what steps you can take to align your actions with God’s will.</p>
+                        <p>As you go through the day, remember that God’s love and grace are new every morning. Allow this truth to encourage and uplift you, and share the joy and peace you receive with those around you.</p>
+                        <p>Additional details and content about this devotional can be added here. Share inspirational messages, deeper reflections, or related scripture readings that will enrich the user's experience. Explore other devotionals and find the ones that resonate with your spiritual journey.</p>
+                        <a href="index.html">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Daily Scripture Card -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Daily Scripture</h5>
+                    <p class="card-text">Find a daily scripture that speaks to your heart and guides your steps.</p>
+                    <button class="btn btn-primary" onclick="toggleContent('scripture')">Read More</button>
+                    <div id="scripture" class="content" style="display: none;">
+                        <p class="mt-3">
+                            
+                            **Daily Scripture: Embracing Faith and Guidance**
+                            
+                            In our fast-paced world, it's easy to feel overwhelmed and lost. Yet, amidst the chaos, the wisdom of Scripture offers solace and direction. Our Daily Scripture section is dedicated to providing you with a daily dose of divine inspiration, allowing you to start each day with spiritual nourishment and guidance.
+                            <br>
+                            Today's Scripture: Philippians 4:13
+                            <br>
+                            "I can do all things through Christ who strengthens me."
+                            <br>
+                            This powerful verse from Philippians 4:13 serves as a reminder of the boundless strength and support available to us through our faith in Christ. Whether you're facing challenges at work, personal struggles, or moments of doubt, this Scripture encourages us to rely on Christ's strength to overcome obstacles and achieve our goals.
+                            <br>
+                            Reflection
+                            <br>
+                            Philippians 4:13 is not just a call to action but a profound declaration of faith. It reassures us that no matter the difficulty we encounter, we are not alone. The power of Christ within us provides the courage and endurance needed to face life's trials. Reflecting on this verse can inspire us to embrace each challenge with confidence, knowing that our strength is fortified through our relationship with Christ.
+                            <br>
+                            Prayer
+                            <br>
+                            Heavenly Father, we thank You for the strength and courage You provide. Help us to trust in Your power and lean on Your support in times of need. May Your presence be our guide and comfort as we navigate through life's ups and downs. In Jesus' name, we pray. Amen.
+                            <br>
+                            Practical Application
+                            <br>
+                            1. Start Your Day with Prayer: Begin each day by seeking strength through prayer. Ask Christ to guide you and empower you to tackle the day's challenges.
+                            2. **Affirm Your Strength**: Whenever you feel overwhelmed, remind yourself of Philippians 4:13. Repeat it as a mantra to bolster your confidence and faith.
+                            3. **Share the Message**: Spread encouragement by sharing today's Scripture with friends and family. Let them also experience the uplifting power of God’s Word.
+                            <br>
+                            We hope that today's Scripture resonates with you and provides the encouragement you need. Visit our website daily for a new verse and reflection to support your spiritual journey.
+                            <br>
+                            Stay blessed and remember: through Christ, you are empowered to overcome all things.
+                            
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <!-- Inspirational Quotes Card -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Inspirational Quotes</h5>
+                    <p class="card-text">Daily quotes to uplift and encourage you in your spiritual journey.</p>
+                    <button class="btn btn-secondary" onclick="toggleContent('quotes')">Read More</button>
+                    <div id="quotes" class="content" style="display: none;">
+                        <p class="mt-3">
+                            Inspirational Quotes: Uplifting Words for Your Spiritual Journey
+                            
+                            In moments of doubt and uncertainty, a single quote can ignite a spark of hope and motivation. Our Inspirational Quotes section is designed to offer you daily encouragement through words that uplift your spirit and fortify your faith. Each quote is selected to resonate deeply, providing comfort and inspiration for your spiritual journey.
+                            Today's Inspirational Quote:
+                            
+                            _"The best way to find yourself is to lose yourself in the service of others."_  
+                            — Mahatma Gandhi
+                            
+                            This profound quote by Mahatma Gandhi reminds us of the transformative power of selflessness. By dedicating ourselves to the service of others, we not only impact their lives but also discover a deeper sense of purpose and fulfillment within ourselves.
+                            
+                            Reflection
+                            
+                            Gandhi's wisdom highlights the paradox of finding oneself through giving rather than receiving. When we focus on serving others, we shift our perspective from self-centered concerns to a broader view of interconnectedness and compassion. This act of selfless service can reveal new dimensions of our character and deepen our sense of belonging and satisfaction.
+                            
+                            Prayer
+                            
+                            Gracious Lord, we thank You for the opportunity to serve others. Help us to embrace selflessness in our daily lives, finding joy and purpose in acts of kindness and service. Guide us to make a positive impact on those around us and to discover our true selves through giving. In Your name, we pray. Amen.
+                            
+                            Practical Application
+                            
+                            1. **Serve Others Daily**: Look for opportunities to assist those around you, whether through acts of kindness, volunteering, or simply offering a listening ear. Each act of service brings you closer to understanding your own purpose.
+                            2. **Reflect on Your Impact**: Regularly take time to reflect on how your service is impacting others and what you are learning about yourself in the process.
+                            3. **Share the Wisdom**: Spread the inspiration by sharing today’s quote with others. Let the words of wisdom uplift and encourage those in your community.
+                            
+                            We hope today’s quote inspires you and brings a renewed sense of purpose to your life. Check back daily for more quotes that will motivate and encourage you on your spiritual path.
+                            
+                            May your day be filled with inspiration and the joy of serving others.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <!-- Footer Section -->
+     <!-- Footer Section -->
+     <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Briscoe Road, Mempeasem-Down Sekondi-Takoradi</p>
+                    <p><strong>Phone:</strong> <a href="tel:+233542367766">+233 54 236 7766</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:clfmm102@gmail.com">clfmm102@gmail.com</a></p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/clfmm?mibextid=ZbWKwL"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var button = content.previousElementSibling;
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                button.textContent = 'Read Less';
+            } else {
+                content.style.display = 'none';
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
+
+
+

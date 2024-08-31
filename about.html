@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Living Faith Miracle Ministry</title>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <style>
+       /* General Styles */
+     /* Custom styles for the navbar */
+     .navbar {
+            background-color: #111416; /* Set the header background color to black */
+            padding: 1rem 1rem; /* Adjust padding to reduce space around the navbar */
+        }
+
+        .navbar-brand {
+            margin-left: 0; /* Reset margin */
+            padding-left: 0; /* Remove padding */
+            
+        }
+
+        .container-fluid {
+            padding-left: 0; /* Remove padding for the left edge */
+        }
+
+        /* Custom styles for the navbar toggler */
+        .navbar-toggler {
+            width: 35px;  /* Adjust the width as needed */
+            height: 35px; /* Adjust the height as needed */
+            padding: 2px; /* Adjust padding to make the icon smaller */
+        }
+
+        /* Custom styles for the offcanvas menu */
+        .offcanvas {
+            background-color: #111416; /* Set the offcanvas background color to dark grey */
+            color: white; /* Set text color to white */
+        }
+
+        .offcanvas .nav-link {
+            color: white; /* Set text color of nav links in offcanvas */
+        }
+
+        .offcanvas .nav-link:hover {
+            color: #f8f9fa; /* Set hover color for nav links in offcanvas */
+            background-color: #333; /* Optional: Set a background color on hover for better visibility */
+        }
+
+        /* Custom styles for the navigation links on larger screens */
+        .nav-link {
+            color: white; /* Set nav links color to white */
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .nav-link:hover {
+            color: black; /* Set hover color for nav links to black */
+            background-color: white; /* Set background color on hover to white */
+            border-radius: 5px; /* Optional: Add some rounding to the hover effect */
+        }
+
+        /* Custom styles for the Account button */
+        .btn-primary {
+            background-color: whitesmoke; /* Set button background color */
+            border-color: white;
+            color: black; /* Set button text color */
+         
+            font-size: 13px;
+            padding: 6px;
+        }
+
+        .btn-primary:hover {
+            background-color: black; /* Set button background color on hover */
+            border-color: black;
+            color: white; /* Set button text color on hover */
+        }
+        .navbar-toggler-icon {
+            background-image: none; /* Remove default image */
+        }
+
+        .navbar-toggler-icon::before {
+            content: "\2630"; /* Unicode for a hamburger menu icon */
+            color: white; /* Change the toggler icon color to white */
+            font-size: 1.5rem; /* Adjust size as needed */
+        }
+
+        /* Custom styles for the close button of the offcanvas */
+        .offcanvas-header .btn-close {
+            filter: invert(1); /* Invert the default close button color to white */
+        }
+
+        .offcanvas-header .btn-close:hover {
+            filter: invert(0.5); /* Change the close button color on hover */
+        }
+
+/*dee*/
+
+
+        footer {
+            background-color: #111416;
+            padding: 1rem 0;
+            color: #ffffff;
+            margin-top: 5rem;
+        }
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+        }
+        .footer-column h3 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-bottom {
+            background-color: #111416;
+            padding: 1rem;
+            text-align: center;
+        }
+        .social-media a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: whitesmoke;
+            color: black;
+            border-color: white;
+
+            
+        }
+
+        .btn-primary:hover {
+            background-color: black;
+            border-color: black;
+        }
+
+
+
+        
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .welcome {
+            padding: 60px 0;
+        }
+
+        
+
+
+        .img-fluid{
+            margin-top: 6.3rem;
+        }
+
+        .container h2{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 3rem;
+        }
+        .col-md-6 p{
+            font-size: 1.25rem;
+            margin-top: 10rem;
+        }
+
+        .about-section {
+            margin: 50px 0;
+        }
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .about-heading {
+            font-weight: 700;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        
+        .about-section{
+            margin-top: 9rem;
+        }
+
+        .container .mb-4{
+            margin-top: -5rem;
+        }
+
+            
+        .container img{
+            margin-top: -1rem;
+
+          
+        }
+        .welcome .container p{
+            margin-top: -3rem;
+        }
+       
+    </style>
+</head>
+<body>
+ <!-- Header Section -->
+ <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="clfmm.png" alt="Logo" width="30" height="30"> 
+        </a>
+        <!-- Toggler for smaller screens -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar items for larger screens -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-3" aria-current="page" href="index.html">Home</a>                
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  mx-3 active" aria-current="page" href="index.html" style="color: rgb(216, 201, 201);">About</a>                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="ministries.html">Ministries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="sermons.html">Sermon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="events.html">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-3" href="donations.html">Giving/Donations</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center ms-auto">
+                <a href="signup.html" class="btn btn-primary">Account</a>
+            </div>
+        </div>
+        <!-- Offcanvas for smaller screens -->
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" aria-current="page" href="index.html">Home</a>                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link  mx-3 active" aria-current="page" href="index.html" style="color: rgb(216, 201, 201);">About</a>                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ministries.html">Ministries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sermons.html">Sermon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donations.html">Giving/Donations</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end mt-3">
+                    <a href="signup.html" class="btn btn-primary">Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Introduction to the Church -->
+
+    <div class="container about-section">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Image placed within the text column to allow wrapping -->
+                <img src="papa1.png" alt="Bishop Image" class="about-img float-start me-3 mb-3" style="width: 650px; height: auto;">
+                
+                <h2 class="about-heading">About Our Bishop</h2>
+                <p class="about-text">
+                    Bishop Abraham Bruce is a dynamic and passionate leader, renowned for his unwavering commitment to spiritual growth and community development. With over two decades of ministry experience, he has touched countless lives with his inspiring messages and profound teachings. His journey began at a young age, where he discovered his calling to serve and uplift those around him. Through his leadership, the Christ Living Faith Miracle Ministry has flourished, becoming a beacon of hope for many.
+                    <br><br>
+                    Under his guidance, the ministry has expanded its outreach programs, providing support to the less fortunate and creating opportunities for personal and spiritual growth. Bishop Bruce's teachings emphasize the importance of faith, love, and perseverance in the face of life's challenges. He believes that every individual has a purpose and is dedicated to helping them discover and fulfill their God-given potential.
+                    <br><br>
+                    His approach to ministry is both innovative and inclusive, welcoming people from all walks of life to experience the transformative power of faith. Whether through his sermons, counseling, or community initiatives, Bishop Bruce's impact is felt far and wide. His dedication to his congregation and his unwavering belief in the power of prayer have made him a beloved figure within the church and beyond.
+                    <br><br>
+                    As the ministry continues to grow, Bishop Bruce remains steadfast in his mission to spread the message of hope, love, and redemption. His vision for the future is one of continued expansion and impact, ensuring that the Christ Living Faith Miracle Ministry remains a place of refuge and inspiration for generations to come.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+  
+    <!-- Welcome Message -->
+    <section class="welcome py-5">
+        
+    <div class="container text-center mb-5">
+        <img src="knowbible1.jpg" alt="Account Image" class="img-fluid">
+    </div>
+   
+        <div class="container">
+            <p>The journey to understanding the God of the Bible is a profound and transformative experience. It invites us to delve deep into the nature of a divine being who is both transcendent and immanent. Through the pages of Scripture, we uncover the attributes, promises, and relationships that define the character of God.</p>
+            <p>In our pursuit of knowing God, we explore His eternal love, His righteousness, and His desire for a personal relationship with each of us. We discover how His presence guides, comforts, and challenges us to grow in faith and devotion. Embracing this journey allows us to align our lives with His will, fostering a deeper connection and understanding of His divine purpose.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+    <footer style="background-color: #111416;">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-md-3 footer-column">
+                    <h3>About Us</h3>
+                    <p>Christ Living Faith Miracle Ministry is dedicated to spreading the love and teachings of Jesus Christ. We are committed to our local community and beyond.</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="sermons.html">Sermons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donations.html">Giving/Donations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Briscoe Road, Mempeasem-Down Sekondi-Takoradi</p>
+                    <p><strong>Phone:</strong> <a href="tel:+233542367766">+233 54 236 7766</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:clfmm102@gmail.com">clfmm102@gmail.com</a></p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/clfmm?mibextid=ZbWKwL"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Christ Living Faith Miracle Ministry. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </footer>
+   
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Optional: Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

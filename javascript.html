@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<style>
+    /* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background: #000; /* Fallback color */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above background */
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Background behind the content */
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darken background image for contrast */
+}
+
+</style>
+   
+</head>
+<body>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Christ Living Faith Miracle Ministry</h1>
+            <p class="hero-subtitle">Join Us for an Uplifting Experience</p>
+            <a href="#events" class="hero-button">Learn More</a>
+        </div>
+        <div class="hero-background">
+            <img src="youtth-hero.png" alt="Hero Background">
+        </div>
+    </section>
+    
+   
+<script>
+ 
+ document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero Section Animation
+    gsap.from('.hero-title', {
+        duration: 1.5,
+        y: -100,
+        opacity: 0,
+        ease: 'power4.out'
+    });
+
+    gsap.from('.hero-subtitle', {
+        duration: 1.5,
+        y: 50,
+        opacity: 0,
+        delay: 0.5,
+        ease: 'power4.out'
+    });
+
+    gsap.from('.hero-button', {
+        duration: 1,
+        scale: 0.8,
+        opacity: 0,
+        delay: 1,
+        ease: 'back.out(1.7)'
+    });
+
+    // Parallax Effect
+    gsap.to('.hero-background img', {
+        yPercent: -50,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '#hero',
+            start: 'top top',
+            end: 'bottom top',
+            scrub: true
+        }
+    });
+});
+
+</script>      
+</body>
+</html>
